@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="kontejner">
+        <section class="header">
+            <a class="header__link" href="/">
+                <h1 class="header__title">Moje kočičky</h1>
+
+                <h2 class="header__subtitle">a různé zajímavosti.</h2>
+            </a>
+        </section>
+
+            {{content | safe}}
+
+
+
+        <section class="footer__copyright">
+            &copy;2022, Sabina Alešová
+        </section>
+    </div>
+</body>
+</html>

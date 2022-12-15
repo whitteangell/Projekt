@@ -1,0 +1,24 @@
+---
+layout: sablona.njk
+---
+
+<section class="menu">
+    <ul class="menu__list">
+        <li class="menu__item invisible invisible2"><a class="menu__link" href="/introduction/">Pár slov úvodem</a></li>
+        <li class="menu__item invisible invisible2"><a class="menu__link" href="/news/">Nelinka a Foxie</a></li>
+        <li class="menu__item invisible2 {{ 'menu__item--active' if page.fileSlug === 'nelinka' }}"><a class="menu__link" href="/nelinka/">Nelinka</a></li>
+        <li class="menu__item invisible2 {{ 'menu__item--active' if page.fileSlug === 'foxie' }}"><a class="menu__link" href="/foxie/">Foxie</a></li>
+        <li class="menu__item invisible2 {{ 'menu__item--active' if page.fileSlug === 'charakteristika' }}"><a class="menu__link" href="/charakteristika/">Charakteristika a zajímavosti</a></li>
+        <li class="menu__item invisible2 {{ 'menu__item--active' if page.fileSlug === 'plemena' }}"><a class="menu__link" href="/plemena/">Plemena koček</a></li>
+    </ul>
+</section>
+
+<main class="main">
+
+    {{content | safe}}
+
+  {% if page.fileSlug !== '' %}
+    <a href="/" class="button__back">◄◄◄</a> 
+  {% endif %}
+
+</main>

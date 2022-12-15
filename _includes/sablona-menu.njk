@@ -1,0 +1,22 @@
+---
+layout: sablona.njk
+---
+
+<section class="menu">
+    <ul class="menu__list">
+        <li class="menu__item invisible"><a class="menu__link" href="/introduction/">Pár slov úvodem</a></li>
+        <li class="menu__item invisible"><a class="menu__link" href="/news/">Nelinka a Foxie</a></li>
+        <li class="menu__item"><a class="menu__link" href="/nelinka/">Nelinka</a></li>
+        <li class="menu__item"><a class="menu__link" href="/foxie/">Foxie</a></li>
+        <li class="menu__item"><a class="menu__link" href="/charakteristika/">Charakteristika a rady</a></li>
+        <li class="menu__item"><a class="menu__link" href="/plemena/">Plemena koček</a></li>
+
+
+    </ul>
+</section>
+
+<main class="main main__flex">
+
+    {{content | safe}}
+
+</main>
